@@ -1,0 +1,24 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.half {
+	display: flex;
+	flex-direction: row;
+}
+
+%halfChild-base {
+	flex-grow: 1;
+	width: 50%;
+}
+
+.halfChild {
+	@extend %halfChild-base;
+}
+
+.halfChildLeft {
+	@extend %halfChild-base;
+	border-right: 1px solid black;
+}
